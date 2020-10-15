@@ -12,7 +12,7 @@ body{
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+.topnav #myMenu {
   display: none;
 }
 
@@ -34,12 +34,6 @@ body{
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Style the active link (or home/logo) */
 .active {
   background-color: $color-primary-4;
@@ -55,7 +49,6 @@ body{
     text-align: center;
     padding: 2rem;
     font-family: $fontFam;
-    margin-bottom: 2rem;
 
     h1{
       padding-top: 1.5rem;
@@ -71,13 +64,17 @@ body{
   }
 }
 
+.spacer {
+  height: 2rem;
+  background-color: $color-primary-4;
+}
+
 .frame2 {
   font-family: $fontFam;
   display: grid;
   width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 2rem;
   img {
    display: block;
    margin-left: auto;
@@ -99,7 +96,6 @@ body{
   font-family: $fontFam;
   background-color: $color-primary-2;
   padding: 2rem;
-  margin-bottom: 2rem;
   .fr3 {
 
     a {
@@ -136,6 +132,7 @@ body{
       padding: 1rem;
     }
     button {
+      margin: 1rem;
       padding: .5rem 1rem;
       color: $color-primary-1;
       background-color: $color-primary-4;
