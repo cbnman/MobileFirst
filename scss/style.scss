@@ -7,8 +7,17 @@ body{
 /* Style the mobile navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: $color-primary-3;
-  position: relative;
+  background-color: $color-primary-1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  img{
+    padding: 10px;
+    float: left;
+    height: 30px;
+  }
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -36,28 +45,33 @@ body{
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: $color-primary-4;
+  background-color: $color-primary-2;
   color: white;
 }
 
-
+//Introduction
 .frame1 {
+  background-image: url('../images/BrickBack.jpg');
+  background-color: $color-primary-1;
+  background-size: cover;
+  margin-top: 3rem;
   .fr1 {
-    background-image: url('../images/LightTan.jpg');
-    background-color: $color-primary-1;
-    background-size: cover;
+
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
+    padding-top: 3rem;
     font-family: $fontFam;
-
-    h1{
-      padding-top: 1.5rem;
-      color: $color-primary-4;
+    .frameHeader{
+      background-color: #ccc;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      h2{
+        color: $color-primary-4;
+      }
+      p {
+        color: $color-primary-4;
+      }
     }
-    h2{
-      color: $color-primary-4;
-    }
-
     a {
     @include buttons;
     }
@@ -85,15 +99,47 @@ body{
     text-align: right;
     padding: 10px 20px;
 
+    .collapsible {
+      background-color: $color-primary-4;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      font-family: $fontFam;
+      color: $color-primary-4;
+      text-align: left;
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding-bottom: 1rem;
+    }
+    .linker {
+      align-content: right;
+    }
     a {
       @include buttons;
     }
   }
 }
 
+
+
 .frame3{
   display: grid;
   font-family: $fontFam;
+  color: $color-primary-4;
   background-color: $color-primary-2;
   padding: 2rem;
   .fr3 {
@@ -139,4 +185,14 @@ body{
       border-radius: 1rem;
     }
   }
+}
+
+.footer {
+  background-color: $color-primary-4;
+  left: 0;
+  bottom: 0;
+  color: $color-primary-1;
+  padding-bottom: .25rem;
+  padding-left: 1rem;
+  padding-top: .25rem;
 }

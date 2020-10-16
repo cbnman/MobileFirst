@@ -4,7 +4,7 @@
   <title>Intuitive Solutions</title>
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico"/>
 </head>
 <body>
   <div class="navbar">
@@ -14,7 +14,8 @@
   </div>
 
   <!-- mobile navbar-->
-<div class="topnav">
+<div class="container topnav">
+  <img src="./images/favicon.png" alt="">
   <a href="#frame1" class="linker active">Intuitive Solutions</a>
   <!-- Navigation links (hidden by default) -->
   <div id="myMenu">
@@ -27,23 +28,82 @@
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
+<!-- Introduction -->
   <div class="container frame1" id="frame1">
     <div class="fr1">
-      <h1>Intuitive Solutions</h1>
-      <h2>Propelling you into the next gen</h2>
+      <div class="frameHeader">
+        <h2>Accomplishing technical problems from your perspective:</h2>
+        <p>Thinking like an engineer experienced in psychology and interpersonal
+        communication.</p>
+      </div>
       <a href="#frame2" class="linker">Learn More</a>
     </div>
   </div>
 
   <div class="container spacer"></div>
 
+<!-- Services -->
   <div class="container frame2" id="frame2">
     <img src="./images/services.jpg" alt="Services">
     <div class="fr2">
       <h1>Services</h1>
-      <h2>Here I will talk about all my skills</h2>
-      <a href="#frame3" class="linker">About Me</a>
+      <button type="button" class="collapsible">Electrical Engineering</button>
+      <div class="content">
+        <ul>
+          <li>Electrical Engineering degree from an ABET accredited University</li>
+          <br>
+          <li>Experience in test bed implementation, circuit design, and prototyping</li>
+          <br>
+          <li>Experience with MATLAB, Eagle, and Mulitsim</li>
+        </ul>
+        <br>
+        <a href="#contact" class="linker">Contact</a>
+      </div>
+      <button type="button" class="collapsible">Website Development</button>
+      <div class="content">
+        <ul>
+          <li>HTML, CSS, JavaScript, and Python experience</li>
+          <br>
+          <li>Front end and back end experience with the appropriate packages</li>
+          <br>
+          <li>Let's work together to develop a website that pulls in customers and represents you well!</li>
+        </ul>
+        <br>
+        <a href="#contact" class="linker">Contact</a>
+      </div>
+      <button type="button" class="collapsible">Excel</button>
+      <div class="content">
+        <ul>
+          <li>Use Excel to streamline your workflow, design process, or even personal productivity</li>
+          <br>
+          <li>Experience with an array of Excel functions as well as macro programming using VBA</li>
+        </ul>
+        <br>
+        <a href="#contact" class="linker">Contact</a>
+      </div>
+      <button type="button" class="collapsible">Sound Engineering</button>
+      <div class="content">
+        <ul>
+          <li>Can perform sound system setup, soundboard training, and other sound consulting</li>
+          <br>
+          <li>Experience with small scale recording operations for those just starting out in the music industry</li>
+          <br>
+          <li>I also have years of experience playing and performing while playing piano, guitar, or singing which allows
+          me to understand many points of view</li>
+        </ul>
+        <br>
+        <a href="#contact" class="linker">Contact</a>
+      </div>
+      <button type="button" class="collapsible">Live Stream Tech</button>
+      <div class="content">
+        <ul>
+          <li>Hire me for you next live stream event to get high quality audio and video</li>
+          <br>
+          <li>I can also perform light video editing for a recorded copy of your livestream event</li>
+        </ul>
+        <br>
+        <a href="#contact" class="linker">Contact</a>
+      </div>
     </div>
   </div>
 
@@ -52,7 +112,12 @@
   <div class="container frame3" id="frame3">
     <div class="fr3">
       <h1>About Me</h1>
-      <h2>I am a recent graduate of WKU</h2>
+      <p>Corbin is a recent graduate of Western Kentucky University with the goal of
+      becoming a freelance tech consultant while pursuing a career in counseling and ministry.
+      He enjoys serving others in his free time through his local church and community events.
+      An avid musician, Corbin loves to play whenever he can with whoever is willing! He believes
+      that his empathic abilities developed through pschology will help him to better provide for his customers!
+      Go with Intuitive Solutions for your next step in your journey!</p>
       <a href="#contact" class="linker">Contact</a>
     </div>
     <img src="./images/profile.jpg" alt="About Me">
@@ -75,7 +140,9 @@
     </div>
   </div>
 
-  
+  <div class="footer container">
+    <p class="">Intuitive Solutions &copy</p>
+  </div>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/main.js" charset="utf-8"></script>
