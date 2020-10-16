@@ -1,10 +1,10 @@
 @import 'config';
 
-body{
+body {
   background-color: $color-primary-1;
 }
-
 /* Style the mobile navigation menu */
+
 .topnav {
   overflow: hidden;
   background-color: $color-primary-1;
@@ -13,19 +13,20 @@ body{
   top: 0;
   right: 0;
   left: 0;
-  img{
+
+  img {
     padding: 10px;
     float: left;
     height: 30px;
   }
 }
-
 /* Hide the links inside the navigation menu (except for logo/home) */
+
 .topnav #myMenu {
   display: none;
 }
-
 /* Style navigation menu links */
+
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -33,8 +34,8 @@ body{
   font-size: 17px;
   display: block;
 }
-
 /* Style the hamburger menu */
+
 .topnav a.icon {
   background: black;
   display: block;
@@ -42,38 +43,41 @@ body{
   right: 0;
   top: 0;
 }
-
 /* Style the active link (or home/logo) */
+
 .active {
   background-color: $color-primary-2;
   color: white;
 }
-
 //Introduction
+
 .frame1 {
-  background-image: url('../images/BrickBack.jpg');
+  background-image: url("../images/BrickBack.jpg");
   background-color: $color-primary-1;
   background-size: cover;
   margin-top: 3rem;
-  .fr1 {
 
+  .fr1 {
     text-align: center;
-    padding: 2.5rem;
-    padding-top: 3rem;
+    padding: 3rem 2.5rem 2.5rem;
     font-family: $fontFam;
-    .frameHeader{
+
+    .frameHeader {
       background-color: #ccc;
       padding: 1rem;
       margin-bottom: 2rem;
-      h2{
+
+      h2 {
         color: $color-primary-4;
       }
+
       p {
         color: $color-primary-4;
       }
     }
+
     a {
-    @include buttons;
+      @include buttons;
     }
   }
 }
@@ -89,12 +93,14 @@ body{
   width: 100%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
+
   .fr2 {
     text-align: right;
     padding: 10px 20px;
@@ -111,7 +117,8 @@ body{
       font-size: 15px;
     }
 
-    .active, .collapsible:hover {
+    .active,
+    .collapsible:hover {
       background-color: #555;
     }
 
@@ -125,29 +132,30 @@ body{
       background-color: #f1f1f1;
       padding-bottom: 1rem;
     }
+
     .linker {
       align-content: right;
     }
+
     a {
       @include buttons;
     }
   }
 }
 
-
-
-.frame3{
+.frame3 {
   display: grid;
   font-family: $fontFam;
   color: $color-primary-4;
   background-color: $color-primary-2;
   padding: 2rem;
-  .fr3 {
 
+  .fr3 {
     a {
       @include buttons;
     }
   }
+
   img {
     display: block;
     margin-left: auto;
@@ -157,29 +165,33 @@ body{
   }
 }
 
-.contact{
+.contact {
   font-family: $fontFam;
   text-align: center;
   background-color: $color-primary-0;
+
   .cota {
     padding: 2rem;
-    h1{
-    }
+
+    h1 {}
+
     input {
       font-family: $fontFam;
       width: 15rem;
-      padding: .5rem;
-      margin: .5rem;
+      padding: 0.5rem;
+      margin: 0.5rem;
     }
+
     textarea {
       width: 25rem;
-      margin: .5rem;
+      margin: 0.5rem;
       font-family: $fontFam;
       padding: 1rem;
     }
+
     button {
       margin: 1rem;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       color: $color-primary-1;
       background-color: $color-primary-4;
       border-radius: 1rem;
@@ -192,7 +204,7 @@ body{
   left: 0;
   bottom: 0;
   color: $color-primary-1;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   padding-left: 1rem;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 }

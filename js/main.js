@@ -1,6 +1,6 @@
 //const $=require('jquery');
 
-function menuMobile(){
+function menuMobile() {
   var x = document.getElementById("myMenu");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -17,8 +17,7 @@ $(".linker").on('click', function() {
 
   $('html, body').animate({
     scrollTop: linkto
-  }, 900
-);
+  }, 900);
 });
 
 var services = document.getElementsByClassName("collapsible");
