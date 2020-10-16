@@ -1,7 +1,9 @@
 @import 'config';
 
 body {
-  background-color: $color-primary-1;
+  background-image: url('../images/Back.jpg');
+  background-position: top;
+  background-size: cover;
 }
 /* Style the mobile navigation menu */
 
@@ -50,11 +52,11 @@ body {
 /* Style the active link (or home/logo) */
 
 .active {
-  background-color: $color-primary-2;
+  background-color: $color-primary-0;
   color: white;
 }
-//Introduction
 
+//Introduction
 .frame1 {
   background-image: url("../images/BrickBack.jpg");
   background-color: $color-primary-1;
@@ -89,25 +91,32 @@ body {
 .spacer {
   height: 2rem;
   background-color: $color-primary-4;
+  opacity: 0.3;
 }
 
+//Services
 .frame2 {
   font-family: $fontFam;
-  display: grid;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
   img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    display: none;
   }
 
   .fr2 {
     text-align: right;
     padding: 10px 20px;
+    h1 {
+      color: $color-primary-4;
+      background-color: white;
+      background-position: right;
+      border: solid white;
+      border-radius: 1rem;
+      margin-left: 60%;
+      padding: .5rem;
+      padding-right: 1rem;
+    }
 
     .collapsible {
       background-color: $color-primary-4;
@@ -140,31 +149,49 @@ body {
     .linker {
       align-content: right;
     }
-
-    a {
-      @include buttons;
-    }
+  }
+  .content{
+          transition: max-height 0.2s ease-out;
+  }
+  a {
+    @include buttons;
+    margin: 2rem 1rem;
   }
 }
 
+
+//About Me
 .frame3 {
   display: grid;
   font-family: $fontFam;
   color: $color-primary-4;
-  background-color: $color-primary-2;
+  background-color:  rgba(255, 255, 255, 0.5);
   padding: 2rem;
 
   .fr3 {
+    h1 {
+      background-color: white;
+      margin-right: 50%;
+      border: solid $color-primary-3;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
+    p {
+      background-color: $color-primary-1;
+      text-shadow: .05rem .05rem $color-primary-2;
+      padding: 1rem;
+      border-radius: .5rem;
+    }
     a {
       @include buttons;
     }
   }
-
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
+    border: solid $color-primary-3;
     border-radius: 1rem;
   }
 }
@@ -177,7 +204,12 @@ body {
   .cota {
     padding: 2rem;
 
-    h1 {}
+    h1 {
+      background-color: white;
+      border: solid $color-primary-3;
+      border-radius: 4rem;
+      padding: 1rem;
+    }
 
     input {
       font-family: $fontFam;
@@ -187,7 +219,7 @@ body {
     }
 
     textarea {
-      width: 25rem;
+      width: 20rem;
       margin: 0.5rem;
       font-family: $fontFam;
       padding: 1rem;

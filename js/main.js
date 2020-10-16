@@ -20,6 +20,7 @@ $(".linker").on('click', function() {
   }, 900);
 });
 
+//Display services
 var services = document.getElementsByClassName("collapsible");
 var i;
 
