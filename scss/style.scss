@@ -5,6 +5,10 @@ body {
 }
 /* Style the mobile navigation menu */
 
+.navbar{
+  display:none;
+}
+
 .topnav {
   overflow: hidden;
   background-color: $color-primary-1;
@@ -207,4 +211,52 @@ body {
   padding-bottom: 0.25rem;
   padding-left: 1rem;
   padding-top: 0.25rem;
+}
+
+@media screen and (min-width: 700px){
+  .topnav{
+    display: none;
+  }
+  .navbar{
+    overflow: hidden;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $color-primary-2;
+    font-style: $fontFam;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    img{
+
+      padding: 10px;
+      float: left;
+      height: 30px;
+    }
+    h1 {
+      color: #f1f1f1;
+      margin-top: 0.75rem;
+      margin-left: 2rem;
+      a {
+        color: #f1f1f1;
+        text-decoration: none;
+      }
+    }
+    ul {
+      justify-self: end;
+      li {
+        padding-right: 2rem;
+        list-style-type: none;
+        display: inline;
+        a {
+          color: #f1f1f1;
+          text-decoration: none;
+          font-size: 18px;
+          padding-right: 15px;
+        }
+      }
+    }
+
+  }
 }
