@@ -27,11 +27,11 @@ var i;
 for (i = 0; i < services.length; i++) {
   services[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
